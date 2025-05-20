@@ -9,9 +9,8 @@ import { CartProvider } from "./context/CartContext"
 import { WishlistProvider } from "./context/WishlistContext"
 
 function App() {
-  // Usar basename para que React Router funcione correctamente en GitHub Pages
   return (
-    <Router basename="/tienda-migue">
+    <Router>
       <CartProvider>
         <WishlistProvider>
           <div className="app">
